@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useActions } from "easy-peasy";
+import React, { useState, useActions } from "react";
+//import { useActions } from "easy-peasy";
 
 const AddTodo = () => {
   const [title, setTitle] = useState("");
@@ -12,7 +12,7 @@ const AddTodo = () => {
         onSubmit={e => {
           e.preventDefault();
           add({
-            titel,
+            title,
             completed: false
           });
         }}

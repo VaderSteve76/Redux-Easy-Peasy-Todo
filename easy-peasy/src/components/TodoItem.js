@@ -1,10 +1,10 @@
 import React from "react";
-import { useActions } from "easy-peasy";
+import { action } from "easy-peasy";
 
 const TodoItem = ({ todo }) => {
-  const { remove, toggle } = useActions(actions => ({
-    remove: actions.remove,
-    toggle: actions.toggle
+  const { remove, toggle } = useActions(action => ({
+    remove: action.remove,
+    toggle: action.toggle
   }));
 
   return (

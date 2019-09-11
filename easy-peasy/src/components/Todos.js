@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import { useStore, useActions } from "easy-peasy";
+import { useStore } from "easy-peasy";
 import TodoItem from "./TodoItem";
 
 const Todos = () => {
