@@ -3,8 +3,7 @@ import uuid from "uuid";
 
 export default {
   todos: [],
-
-  //Thunks
+  // Thunks
   fetchTodos: thunk(async actions => {
     const res = await fetch(
       "https://jsonplaceholder.typicode.com/todos?_limit=5"
@@ -13,11 +12,11 @@ export default {
 
     actions.setTodos(todos);
   }),
-  //Actions
+  // Actions
   setTodos: action((state, todos) => {
     state.todos = todos;
   }),
-  add: action((state, id) => {
+  add: action((state, todo) => {
     todo.id = uuid.v4();
     state.todos = [...state.todos, todo];
   }),
