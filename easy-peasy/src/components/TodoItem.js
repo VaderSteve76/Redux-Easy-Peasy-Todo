@@ -16,7 +16,7 @@ const TodoItem = ({ todo }) => {
         {todo.title}
       </span>
       <button onClick={() => remove(todo.id)}>
-        <i className="fas fa-trash-alt" />
+        <i className="fas fa-trash-alt"></i>
       </button>
     </div>
   );
