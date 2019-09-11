@@ -1,5 +1,5 @@
-import React, { useState, useActions } from "react";
-//import { useActions } from "easy-peasy";
+import React, { useState } from "react";
+import { useActions } from "easy-peasy";
 
 const AddTodo = () => {
   const [title, setTitle] = useState("");
@@ -21,7 +21,7 @@ const AddTodo = () => {
           type="text"
           value={title}
           onChange={e => setTitle(e.target.value)}
-          placeholder="Add Todo"
+          placeholder="Add todo title..."
         />
         <input type="submit" value="Add Todo" />
       </form>
